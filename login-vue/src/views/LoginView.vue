@@ -21,6 +21,9 @@
          </form>
        </div>
      </div>
+     <div id="example-2">
+  <!-- `saludar` es el nombre de un método definido a continuación -->
+</div>
  </template>
  
  <script lang="ts" setup>
@@ -45,13 +48,20 @@
          
 
        });
+       
        console.log('Inicio de sesión exitoso', response.data);
   authStore.setAuthenticated(true);
         router.push('/home');
+        alert("inicio de sesion exitoso")
+        
      } catch (error) {
        console.error('Error al iniciar sesión', error);
+        alert("Error Al iniciar sesion")
+        
      }
    };
+
+  
  
    
  </script>
